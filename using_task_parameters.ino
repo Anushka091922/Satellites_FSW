@@ -4,6 +4,8 @@
 #define   BLUE    7
 #define   YELLOW  8
 
+#here we have assigned different pins to all three LEDs so that we could differentiate which LED is connected to which pin
+
 typedef int TaskProfiler;   
 
 TaskProfiler RedLEDProfiler;
