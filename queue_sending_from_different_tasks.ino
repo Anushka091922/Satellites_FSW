@@ -4,7 +4,7 @@
 #define RED     6
 #define YELLOW  7
 #define BLUE    8
-
+#here we have included all the header files which we are using for the implementation of the following task
 
 typedef int TaskProfiler;
 
@@ -22,7 +22,7 @@ void setup()
   xTaskCreate(vSenderTask,"Sender Task 2",100,2019,1,NULL);
   xTaskCreate(vReceiverTask,"Receiver Task",100,NULL,2,NULL);
 }
-
+#making the function
 void vSenderTask(void *pvParameters)
 {
   BaseType_t qStatus;
@@ -42,7 +42,7 @@ void vSenderTask(void *pvParameters)
       
   }
 }
-
+#making the function 
 void vReceiverTask(void *pvParameters)
 {
   BaseType_t qStatus;
